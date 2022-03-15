@@ -1,0 +1,7 @@
+
+import re
+str = 'PrintThisCamelCaseIntoDifferentLinesSeperately'
+l=[]
+l=re.findall('[A-Z][^A-Z]*',str)
+for i in range(len(l)):
+    print(l[i])
